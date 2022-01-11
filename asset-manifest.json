@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/codelandia-3/static/css/main.073c9b0a.css",
+    "main.js": "/codelandia-3/static/js/main.61888c28.js",
+    "static/js/787.541c9b91.chunk.js": "/codelandia-3/static/js/787.541c9b91.chunk.js",
+    "static/media/logo.svg": "/codelandia-3/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/codelandia-3/index.html",
+    "main.073c9b0a.css.map": "/codelandia-3/static/css/main.073c9b0a.css.map",
+    "main.61888c28.js.map": "/codelandia-3/static/js/main.61888c28.js.map",
+    "787.541c9b91.chunk.js.map": "/codelandia-3/static/js/787.541c9b91.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.61888c28.js"
+  ]
+}
