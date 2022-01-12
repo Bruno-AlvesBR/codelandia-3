@@ -104,6 +104,14 @@ export const ContainerProducts = styled.section`
             font-size: 1rem;
         }
     }
+    @media (max-width: 450px)
+    {
+        padding: 5px;
+        .card 
+        {
+            width: 90%;
+        }
+    }
 `;
 export const ContainerContact = styled.section`
     min-height: 650px;
