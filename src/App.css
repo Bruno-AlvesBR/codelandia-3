@@ -14,3 +14,12 @@ body
   font-size: 62.5%;
   background-color: #D7D4FF;
 }
+main 
+{
+  width: 100%;
+  max-width: 1550px;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}

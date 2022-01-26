@@ -5,12 +5,9 @@ export const Content = styled.section`
 `;
 export const ContainerApresentation = styled.section`
     min-height: 400px;
-    width: 100%;
-    max-width: 1300px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    margin: auto;
     .box-message-apresentation
     {
         width: 450px;
@@ -72,12 +69,9 @@ export const ContainerApresentation = styled.section`
 `;
 export const ContainerProducts = styled.section`
     min-height: 650px;
-    width: 100%;
-    max-width: 1300px;
     background-color: #fff;
     padding: 30px;
     display: flex;
-    margin: auto;
     flex-wrap: wrap;
     justify-content: center;
     .card 
@@ -115,10 +109,7 @@ export const ContainerProducts = styled.section`
 `;
 export const ContainerContact = styled.section`
     min-height: 650px;
-    width: 100%;
-    max-width: 1300px;
     display: flex;
-    margin: auto;
     justify-content: center;
     align-items: center;
 `;
