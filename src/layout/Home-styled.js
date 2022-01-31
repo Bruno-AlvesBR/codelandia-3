@@ -1,8 +1,5 @@
 import styled from "styled-components";
 
-export const Content = styled.section`
-    min-height: 650px;
-`;
 export const ContainerApresentation = styled.section`
     min-height: 400px;
     padding: 10px;
@@ -67,44 +64,43 @@ export const ContainerApresentation = styled.section`
         }
     }
 `;
-export const ContainerProducts = styled.section`
+export const ContainerProducts = styled.div`
     min-height: 650px;
     background-color: #fff;
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    .card 
-    {
-        width: 300px;
-        height: 300px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 30px;
-        box-shadow: 0px 0px 10px #00000030;
-        img 
-        {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        span 
-        {
-            display: flex;
-            padding: 5px;
-            margin: auto;
-            text-align: center;
-            font-size: 1rem;
-        }
-    }
     @media (max-width: 450px)
     {
         padding: 5px;
-        .card 
-        {
-            width: 90%;
-        }
+    }
+`;
+export const Card = styled.label`
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    box-shadow: 0px 0px 10px #00000030;
+    img 
+    {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    span 
+    {
+        display: flex;
+        padding: 5px;
+        margin: auto;
+        text-align: center;
+        font-size: 1rem;
+    }
+    @media (max-width: 450px)
+    {
+        width: 90%;
     }
 `;
 export const ContainerContact = styled.section`

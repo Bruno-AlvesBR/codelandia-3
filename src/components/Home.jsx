@@ -1,9 +1,17 @@
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { 
+    useEffect, 
+    useState 
+} from 'react';
 import { Link } from 'react-router-dom';
-import { Content, ContainerApresentation, ContainerProducts, ContainerContact } from '../layout/Home-styled';
+import { 
+    ContainerApresentation, 
+    ContainerProducts, 
+    Card,
+    ContainerContact 
+} from '../layout/Home-styled';
 import Form from './Form';
 import LogoApresentation from './images/apresentation.svg';
 
@@ -14,14 +22,15 @@ export default function Home()
     {
         axios.get('https://jsonplaceholder.typicode.com/photos')
         .then(res => setData(res.data))
-        .catch(err => console.log(err))
     })
+
     useEffect(() =>
-    {
+    { 
         Aos.init({ duration: 1000 })
     }, [])
+
     return (
-        <Content>
+        <>
             <ContainerApresentation>
                 <div data-aos="fade-up" className="box-message-apresentation">
                     <h2>Lorem ipsum dolor sit amet</h2>
@@ -34,18 +43,18 @@ export default function Home()
                 {data.slice(0, 15).map((item, key) =>
                 {
                     return(
-                        <div  data-aos="fade-up" key={key} className="card">
+                        <Card data-aos="fade-up" key={key}>
                             <img src={item.url} alt="imagem renderizada" />
                             <span>
                                 <p>{item.title}</p>
                             </span>
-                        </div>
+                        </Card>
                     )
                 })}
             </ContainerProducts>
             <ContainerContact  data-aos="fade-up">
                 <Form />
             </ContainerContact>
-        </Content>
+        </>
     )
 }

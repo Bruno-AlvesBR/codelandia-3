@@ -12,8 +12,6 @@ export default function App()
           <Route path="/codelandia-3/" element={<Home />} />
         </Routes>
       </main>
-
-      <footer></footer>
     </Router>
   )
 }
