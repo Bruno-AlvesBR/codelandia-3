@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Content = styled.form`
+export const ContentForm = styled.form`
     width: 100%;
     max-width: 400px;
     display: flex;
@@ -10,6 +10,7 @@ export const Content = styled.form`
     h1 
     {
         font-size: 2rem;
+        text-align: center;
     }
     input 
     {
